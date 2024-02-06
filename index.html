@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://planit-css.netlify.app/1.7/planit.css">
+    <title>Document</title>
+</head>
+<script src="https://planit-css.netlify.app/1.7/JS/syder.js"></script>
+<body class="no-scroll font1 overflow-hidden m-scale-2 m-no-scroll" onclick="open_pokedex()">
+
+    <img src="pokedex/bg.png" class="m-none absolute z-index-0 h-vh-100 m-full-100 w-100 center-screen"> 
+    <img src="pokedex/bg.png" class="m-block none absolute z-index-0 m-full-100 center-screen"> 
+    <div id="divfundo" class="fade bg-console absolute w-100 h-vh-100 z-index-0 op-02"></div>
+    
+
+<script>
+
+function verificarResolucao(imagem) {
+        
+        var img = new Image();
+  
+        img.src = imagem.src;
+  
+        img.onload = function() {
+  
+            var pok = document.getElementById("pokemon");
+
+          if (img.width >= 70 && img.height >= 70) {
+
+            if(pok.classList.contains("h-5-05")){
+                replace(0, 'pokemon', 'h-5-05', 'h-7');
+                replace(0, 'pokemon', 'mg-top-2', 'mg-top-1-02')
+            }else if(pok.classList.contains("h-4")){
+                replace(0, 'pokemon', 'h-4', 'h-7');
+                replace(0, 'pokemon', 'mg-top-2-05', 'mg-top-1-02')
+            }
+        
+          }
+
+          if (img.width >= 50 && img.height >= 50) {
+
+            if(pok.classList.contains("h-7")){
+                replace(0, 'pokemon', 'h-7', 'h-5-05');
+                replace(0, 'pokemon', 'mg-top-1-02', 'mg-top-2')
+            }else if(pok.classList.contains("h-4")){
+                replace(0, 'pokemon', 'h-4', 'h-5-05');
+                replace(0, 'pokemon', 'mg-top-2-05', 'mg-top-2')
+            }
+            
+          }else{
+            if(pok.classList.contains("h-7")){
+                replace(0, 'pokemon', 'h-7', 'h-4');
+                replace(0, 'pokemon', 'mg-top-1-02', 'mg-top-2-05')
+            }else if(pok.classList.contains("h-5-05")){
+                replace(0, 'pokemon', 'h-5-05', 'h-4');
+                replace(0, 'pokemon', 'mg-top-2', 'mg-top-2-05')
+            }
+          }
+
+        };
+      }
+
+      function open_pokedex(){
+        replace(0, 'shadoly', 'w-26', 'w-46');
+        replace(0.95, 'shadoly', 'mg-left-16-05', 'mg-left-7');
+        replace(1, 'divfundo', 'op-02', 'op-07');
+        replace(0, 'c', 'w-35', 'w-1'); replace(0.15, 'c', 'op-1', 'op-0'); replace(0, 'c', 'mg-left-0', 'mg-left-22');
+        replace(2, 'active-right', 'op-0', 'op-1');
+        replace(0.3, 't', 'mg-left-0', 'mg-left-22'); replace(0, 't', 'none', 'block'); replace(0.3, 't', 'w-1', 'w-35');
+        replace(1, 'pt1', 'mg-right-0', 'mg-right-20');replace(1, 'pt2', 'mg-right-0', 'mg-right-20');replace(0, 'pt3', 'mg-right-0', 'mg-right-20');
+        replace(0, 'pt4', 'mg-right-0', 'mg-right-20');replace(0, 'pt5', 'mg-right-0', 'mg-right-20');replace(0, 'pt6', 'mg-right-0', 'mg-right-20');
+        replace(0, 'pt7', 'mg-right-0', 'mg-right-20');replace(0, 'pt8', 'mg-right-0', 'mg-right-20');replace(0, 'pt9', 'mg-right-0', 'mg-right-20');
+        replace(0, 'pt10', 'mg-right-0', 'mg-right-20');replace(0, 'pt11', 'mg-right-0', 'mg-right-20');replace(0, 'pt12', 'mg-right-0', 'mg-right-20');
+        replace(0, 'pt13', 'mg-right-0', 'mg-right-20');replace(0, 'pt14', 'mg-right-0', 'mg-right-20');replace(0, 'pt15', 'mg-right-0', 'mg-right-20');
+        replace(1.5, 'pt3', 'op-0', 'op-1');
+        replace(1.8, 'pt4', 'op-0', 'op-1');
+        replace(2, 'pt5', 'op-0', 'op-1');
+        replace(2.2, 'pt6', 'op-0', 'op-1');
+        replace(1.5, 'pt7', 'op-0', 'op-1');
+        replace(1.6, 'pt8', 'op-0', 'op-1');
+        replace(1.7, 'pt9', 'op-0', 'op-1');
+        replace(1.5, 'pt10', 'op-0', 'op-1');
+        replace(2, 'pt11', 'op-0', 'op-1');
+        replace(1.9, 'pt12', 'op-0', 'op-1');
+        replace(1.5, 'pt13', 'op-0', 'op-1');
+        replace(2.2, 'pt14', 'op-0', 'op-1');
+        replace(1.7, 'pt15', 'op-0', 'op-1');
+        replace(1, 't', 'mg-right--22', 'mg-right--2');
+        replace(1, 'backer', 'mg-left-3-05', 'mg-left--6-05');
+        replace(1, 'next', 'mg-left-3-05', 'mg-left--6-05');
+        replace(1, 'bg-base', 'mg-left--2', 'mg-left--12');
+        replace(2.2, 'pokemon', 'op-0', 'op-1');
+        replace(1.6, 'bg-base2', 'op-0', 'op-1');
+        replace(1.8, 'bg-base', 'op-1', 'op-0');
+        replace(1.8, 'rays', 'op-0', 'op-1');
+        replace(2, 'name', 'op-0', 'op-1');
+        replace(2, 'number', 'op-0', 'op-1');
+        replace(2, 'poketype1', 'op-0', 'op-1');
+        replace(2, 'poketype2', 'op-0', 'op-1');
+        replace(2, 'btn-mobile', 'op-0', 'op-1');
+        replace(2, 'btn-mobile2', 'op-0', 'op-1');
+    }
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "ArrowDown") {
+        backer();
+    } else if (event.key === "ArrowUp") {
+        next();
+    } else if (event.key === "ArrowLeft") {
+        backer();
+    } else if (event.key === "ArrowRight") {
+        next();
+    } else if (event.key === "Enter") {
+        open_pokedex();
+    }else if (event.key === " ") {
+        open_pokedex();
+    }});
+
+    var imagemAtual = 1;
+
+    function next() {
+        var numr = document.getElementById("number");
+        var nm = document.getElementById("name");
+        var type1 = document.getElementById("poketype1");
+        var type2 = document.getElementById("poketype2");
+        var imgElement = document.getElementById('pokemon');
+        var imgElement2 = document.getElementById('pokemon2');
+
+        if (imagemAtual == 649) {
+            imagemAtual = 1;
+        } else {
+            imagemAtual++;
+        }
+        numr.innerHTML = imagemAtual;
+
+    fetch('https://pokeapi.co/api/v2/pokemon/' + imagemAtual)
+        .then(response => response.json())
+        .then(data => {
+            var imgbg = document.getElementById('pokeimgbg');
+            var poketype = data.types[0].type.name;
+            var pokeability = data.abilities[0].ability.name;
+            var pokenome = data.forms[0].name;
+
+            nm.innerHTML = pokenome.charAt(0).toUpperCase() + pokenome.slice(1);
+            type1.innerHTML = poketype.charAt(0).toUpperCase() + poketype.slice(1);
+
+            if (data.types.length > 1) {
+                var poketype2 = data.types[1].type.name;
+                type2.innerHTML = poketype2.charAt(0).toUpperCase() + poketype2.slice(1);
+            }else{
+                type2.innerHTML = " ";
+            }
+
+        })
+        .catch(error => console.error('Erro ao obter dados da API:', error));
+
+        imgElement.src = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/' + imagemAtual + '.gif';
+        imagemAtual_plus = imagemAtual + 0;
+        imgElement2.src = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/' + imagemAtual_plus + '.gif';
+
+        verificarResolucao(imgElement2);
+}
+
+function backer() {
+    var numr = document.getElementById("number");
+    var nm = document.getElementById("name");
+    var type1 = document.getElementById("poketype1");
+    var type2 = document.getElementById("poketype2");
+    var imgElement = document.getElementById('pokemon');
+    var imgElement2 = document.getElementById('pokemon2');
+    
+    if (imagemAtual == 1) {
+        imagemAtual = 649;
+    } else {
+        imagemAtual--;
+    }
+
+    numr.innerHTML = imagemAtual;
+
+    fetch('https://pokeapi.co/api/v2/pokemon/' + imagemAtual)
+        .then(response => response.json())
+        .then(data => {
+            var imgbg = document.getElementById('pokeimgbg');
+            var poketype = data.types[0].type.name;
+            var pokeability = data.abilities[0].ability.name;
+            var pokenome = data.forms[0].name;
+
+            nm.innerHTML = pokenome.charAt(0).toUpperCase() + pokenome.slice(1);
+            type1.innerHTML = poketype.charAt(0).toUpperCase() + poketype.slice(1);
+
+            if (data.types.length > 1) {
+                var poketype2 = data.types[1].type.name;
+                type2.innerHTML = poketype2.charAt(0).toUpperCase() + poketype2.slice(1);
+            }else{
+                type2.innerHTML = " ";
+            }
+
+        })
+    .catch(error => console.error('Erro ao obter dados da API:', error));
+
+    imgElement.src = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/' + imagemAtual + '.gif';
+        imagemAtual_plus = imagemAtual + 0;
+    imgElement2.src = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/' + imagemAtual_plus + '.gif';
+
+    verificarResolucao(imgElement2);
+}
+
+function btn_left(){
+    backer(); replace(0, 'll', 'block', 'no-click'); replace(0.5, 'll', 'no-click', 'block');
+    replace4(0, 0.1, 'left', 'op-0', 'op-1');
+    replace4(0, 0.1, 'll', 'black', 'white');
+}
+
+function btn_right(){
+    next(); replace(0, 'rr', 'block', 'no-click'); replace(0.5, 'rr', 'no-click', 'block');
+    replace4(0, 0.1, 'right', 'op-0', 'op-1');
+    replace4(0, 0.1, 'rr', 'black', 'white');
+}
+
+function btn_top(){
+    next(); replace(0, 'uu', 'block', 'no-click'); replace(0.5, 'uu', 'no-click', 'block');
+    replace4(0, 0.1, 'top', 'op-0', 'op-1');
+    replace4(0, 0.1, 'uu', 'black', 'white');
+}
+
+function btn_bottom(){
+    backer(); replace(0, 'dd', 'block', 'no-click'); replace(0.5, 'dd', 'no-click', 'block');
+    replace4(0, 0.1, 'bottom', 'op-0', 'op-1');
+    replace4(0, 0.1, 'dd', 'black', 'white');
+}
+
+</script>
+
+<main id="pokedexx" class="w-full-100 h-vh-100 flex ctr relative no-scroll ani-float center-v-screen m-mg-top--15">
+
+    <div id="shadoly" class="ani-size2 fade-09 left-20 mg-left-16-05 bg-console w-26 b-radius-full-100 h-2-05 absolute center-screen op-06 mg-top-19-05"></div>
+
+<img id="t" src="pokedex/opened.png" alt="pokedex" class="fade-05 w-1 h-42 absolute center-v-screen z-index-1 mg-left-0 mg-right--22">
+
+<img id="c" src="pokedex/closed.png" alt="pokedex" class="pointer fade-03 op-1 mg-left-0 w-35 h-42 absolute center-v-screen z-index-5">
+<img id="active-right" src="pokedex/active8.png" alt="pokedex" class="fade op-0 mg-left-0 w-35 h-42 absolute center-v-screen right-20 mg-right-05 z-index-3">
+
+<img id="pt1" src="pokedex/pokedex.png" alt="pokedex" class="fade mg-right-0 w-35 h-42 absolute center-v-screen z-index-2">
+<img id="pt2" src="pokedex/support.png" alt="pokedex" class="fade mg-right-0 w-35 h-42 absolute center-v-screen z-index-4">
+<img id="pt3" src="pokedex/active1.png" alt="pokedex" class="fade-1 mg-right-0 w-35 h-42 absolute center-v-screen z-index-4 op-0">
+<img id="pt4" src="pokedex/active2.png" alt="pokedex" class="fade-1 mg-right-0 w-35 h-42 absolute center-v-screen z-index-4 op-0">
+<img id="pt5" src="pokedex/active3.png" alt="pokedex" class="fade-1 mg-right-0 w-35 h-42 absolute center-v-screen z-index-4 op-0">
+<img id="pt6" src="pokedex/active4.png" alt="pokedex" class="fade-1 mg-right-0 w-35 h-42 absolute center-v-screen z-index-4 op-0">
+<img id="pt7" src="pokedex/active5.png" alt="pokedex" class="fade-1 mg-right-0 w-35 h-42 absolute center-v-screen z-index-4 op-0">
+<img id="pt8" src="pokedex/active6.png" alt="pokedex" class="fade-1 mg-right-0 w-35 h-42 absolute center-v-screen z-index-4 op-0">
+<img id="pt9" src="pokedex/active7.png" alt="pokedex" class="fade-1 mg-right-0 w-35 h-42 absolute center-v-screen z-index-4 op-0">
+<img id="pt10" src="pokedex/active8.png" alt="pokedex" class="fade-1 op-0 w-35 h-42 absolute center-v-screen z-index-4 mg-left-2 mg-right--22">
+<img id="pt11" src="pokedex/active9.png" alt="pokedex" class="fade-1 op-0 w-35 h-42 absolute center-v-screen z-index-2 mg-left-2 mg-right--22">
+<img id="pt12" src="pokedex/active10.png" alt="pokedex" class="fade-1 op-0 w-35 h-42 absolute center-v-screen z-index-4 mg-left-2 mg-right--22">
+<img id="pt13" src="pokedex/active11.png" alt="pokedex" class="fade-1 op-0 w-35 h-42 absolute center-v-screen z-index-4 mg-left-2 mg-right--22">
+<img id="pt14" src="pokedex/active12.png" alt="pokedex" class="fade-1 op-0 w-35 h-42 absolute center-v-screen z-index-4 mg-left-2 mg-right--22">
+<img id="pt15" src="pokedex/active13.png" alt="pokedex" class="fade-1 op-0 w-35 h-42 absolute center-v-screen z-index-4 mg-left-2 mg-right--22">
+
+<img id="left" src="pokedex/select-left.png" alt="pokedex" class="mg-right-20 w-35 h-42 absolute center-v-screen z-index-4 op-0">
+<img id="right" src="pokedex/select-right.png" alt="pokedex" class="mg-right-20 w-35 h-42 absolute center-v-screen z-index-4 op-0">
+<img id="top" src="pokedex/select-top.png" alt="pokedex" class="mg-right-20 w-35 h-42 absolute center-v-screen z-index-4 op-0">
+<img id="bottom" src="pokedex/select-bottom.png" alt="pokedex" class="mg-right-20 w-35 h-42 absolute center-v-screen z-index-4 op-0">
+
+
+
+<div id="backer" class="fade absolute center-screen mg-top-11-07 mg-left-3-05 mg-right--17 w-2 h-7-05 z-index-4 pointer b-radius-05 overflow-hidden op-1">
+    <div id="uu" onclick="btn_top()" class="fade-01 block w-2 h-2 top-0 m-gray8 black op-08 center-h-screen"><i class="txt-font-1 mg-left-04 mg-top-01 center-v-screen w-full-100 bi bi-caret-up-fill"></i></div>
+    <div id="dd" onclick="btn_bottom()" class="fade-01 block w-2 h-2 bottom-0 m-gray8 black op-08 center-h-screen"><i class="txt-font-1 mg-left-04 mg-top--03 center-v-screen w-full-100 bi bi-caret-down-fill"></i></div>
+</div>
+
+<div id="next" class="fade absolute center-screen mg-top-11-05 mg-left-3-05 mg-right--7 w-7-05 h-2 z-index-4 pointer b-radius-05 overflow-hidden op-1">
+    <div class="h-07 w-07 bg-black m-bg-gray8 op-07 b-radius-100 center-screen mg-top-01"></div>
+    <div id="ll" onclick="btn_left()" class="fade-01 block w-2 h-2 left-0 m-gray8 black op-08 center-v-screen"><i class="txt-font-1 mg-left-06 mg-top-01 center-v-screen w-full-100 bi bi-caret-left-fill"></i></div>
+    <div id="rr" onclick="btn_right()" class="fade-01 block w-2 h-2 right-0 m-gray8 black op-08 center-v-screen"><i class="txt-font-1 mg-left-02 mg-top-01 center-v-screen w-full-100 bi bi-caret-right-fill"></i></div>
+</div>
+
+
+<img id="pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif" class="fade-03 absolute center-screen mg-left--12 mg-right-4 w-auto h-4 z-index-3 mg-top--3-05 op-0">
+<img id="pokemon2" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif" class="op-0">
+
+<div id="bg-base2" class="fade absolute center-screen mg-top--3 mg-left--12 bg-console mg-right-4 w-17 h-10 z-index-2 pointer b-radius-05 b-solid b-black b-w-01 overflow-hidden op-0">
+    
+    <img id="pokeimgbg" src="pokedex/bg.png" class="w-full-110 h-13 center-screen mg-top-0 z-index-1 fade op-07">
+    
+</div>
+
+<div id="bg-base" class="fade absolute center-screen mg-top--3 mg-left--2 mg-right-4 w-17 h-10 z-index-2 bg-console pointer b-radius-05 b-solid b-black b-w-01 overflow-hidden op-1">
+    <div class="w-30 h-4 bg-white op-01 rotate-50 mg-left--5"></div>
+    <div class="w-30 h-2 bg-white op-01 rotate-50 mg-left--12"></div>
+</div>
+
+<div class="absolute center-screen mg-top--6-02 z-index-10 mg-left-12 m-mg-top--5-08">
+    <p id="name" class="fade-1 txt-font-1-02 op-0 no-select">Bullbassaur</p>
+</div>
+
+<div class="absolute mg-top--01 center-screen z-index-10 mg-top--9 mg-left-12 m-mg-top--8-08">
+    <p id="number" class="fade-1 txt-font-1-02 op-0 white no-select">1</p>
+</div>
+
+<div class="absolute mg-top-11-01 m-mg-top-11-03 center-screen z-index-10 mg-left-7-07">
+    <p id="poketype1" class="fade-1 txt-font-1-02 op-0 white no-select">Grass</p>
+</div>
+
+<div class="absolute mg-top-11-01 m-mg-top-11-03 center-screen z-index-10 mg-left-16">
+    <p id="poketype2" class="fade-1 txt-font-1-02 op-0 white no-select">Poison</p>
+</div>
+
+</main>
+
+
+<div id="btn-mobile" class="none m-block pointer bg-transparent b-white b-solid b-w-01 op-0 white center-screen b-radius-1 mg-top-30 z-index-10 mg-left-11 txt-font-3 w-15 ctr txt-center auto absolute pd-v-1 pd-h-2" onclick="next()">Next</div>
+<div id="btn-mobile2" class="none m-block pointer bg-transparent b-white b-solid b-w-01 op-0 white center-screen b-radius-1 mg-top-30 z-index-10 mg-left--11 txt-font-3 w-15 ctr txt-center auto absolute pd-v-1 pd-h-2" onclick="backer()">Preview</div>
+
+
+
+
+</body>
+
+<script>
+    function verificarImagem(imgElement, fallbackSrc) {
+    imgElement.onerror = function() {
+        imgElement.src = fallbackSrc;
+    };
+}
+
+    var minhaImagem = document.getElementById("pokemon");
+
+    var imagemFallbackSrc = "pokedex/no-found.png";
+
+    verificarImagem(minhaImagem, imagemFallbackSrc);
+
+</script>
+
+</html>
