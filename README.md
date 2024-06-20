@@ -1,2 +1,3 @@
 # Pokedex
-My first Pokedex created with HTML, CSS, and JS, using a custom CSS and JS framework that I had developed previously
+Minha primeira pokedex feita com Html, Js, e um Css personalizado que desenvolvi anteriormente.
+https://gabrielmoraisdev.github.io/Pokedex/
