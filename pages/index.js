@@ -129,9 +129,9 @@ export default function Home() {
           {description}
         </div>
 
-        <Image className={`cursor-pointer absolute z-30 ${openPokedex && 'h-[80vw] ml-[50vw] lg:h-[45rem] w-0 lg:ml-[27rem] pointer-events-none'} duration-300`} width={500} height={900} alt="" src={'/tamp.png'} onClick={()=>setOpenPokedex(true)}/>
-        <Image className={`absolute z-40 h-[80vw] lg:h-[45rem] ${!PokeMenu ? 'w-0' : 'w-[60vw] lg:w-[31rem] pointer-events-none'} ml-[43.5vw] md:ml-[40.2vw] lg:ml-[25.75rem] duration-300`} width={500} height={900} alt="" src={'/open.png'} onClick={()=>setOpenPokedex(true)}/>
-        <Image className="pointer-events-none absolute z-20 h-[80vw] lg:h-[45rem]" width={500} height={900} alt="" src={'/front.png'}/>
+        <Image className={`cursor-pointer absolute z-30 ${openPokedex && 'h-[80vw] ml-[50vw] lg:h-[45rem] w-0 lg:ml-[27rem] pointer-events-none'} duration-300`} width={500} height={900} alt="" src={'/tamp.webp'} onClick={()=>setOpenPokedex(true)}/>
+        <Image className={`absolute z-40 h-[80vw] lg:h-[45rem] ${!PokeMenu ? 'w-0' : 'w-[60vw] lg:w-[31rem] pointer-events-none'} ml-[43.5vw] md:ml-[40.2vw] lg:ml-[25.75rem] duration-300`} width={500} height={900} alt="" src={'/open.webp'} onClick={()=>setOpenPokedex(true)}/>
+        <Image className="pointer-events-none absolute z-20 h-[80vw] lg:h-[45rem]" width={500} height={900} alt="" src={'/front.webp'}/>
       </div>      
     </div>
     </>
